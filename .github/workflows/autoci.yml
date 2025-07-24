@@ -78,6 +78,15 @@ jobs:
 
       - uses: r-lib/actions/setup-pandoc@v2
 
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+           python-version: '3.13'
+           cache: 'pip' # caching pip dependencies
+
+      - name: Install Python Requirements
+        run: pip install -r requirements.txt
+
       - name: Setup git identity
         run: |
           git config user.name adigherman
