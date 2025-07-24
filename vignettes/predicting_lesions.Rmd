@@ -25,7 +25,7 @@ library(flexconn)
 FLEXCONN stands for Fast Lesion Extraction using Convolutional Neural Networks, which the main goal is to segment lesions from magnetic resonance images (MRIs) from patients with multiple sclerosis (MS).  The methods are described here:
 https://arxiv.org/abs/1803.09172.  Patients with MS commonly have 2 MRI sequences done, T1-weighted images and fluid attenuated inversion recovery (FLAIR).  FLEXCONN requires a number of Python modules to run.  You can install them either system wide (not shown) or using `reticulate`.  The `reticulate` way is wrapped in `install_flexconn`:
 
-```{r, eval = FALSE}
+```{r}
 flexconn::install_flexconn()
 ```
 
