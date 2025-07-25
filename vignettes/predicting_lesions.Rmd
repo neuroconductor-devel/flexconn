@@ -47,7 +47,8 @@ download.file(model_url, destfile = model_file)
 We will load the model into `R` so we can predict using it
 ```{r load_model}
 #model = keras::load_model_hdf5(model_file)
-model = keras::load_model_hdf5("FLEXCONNmodel2D_35x35_25-07-2025_21-53-35.h5")
+model_file = system.file("extdata", "FLEXCONNmodel2D_35x35_25-07-2025_21-53-35.h5", package = "flexconn")
+model = keras::load_model_hdf5(model_file)
 model
 ```
 
