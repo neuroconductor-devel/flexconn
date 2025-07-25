@@ -64,7 +64,7 @@ train = lapply(train, function(x) {
 
 model <- flexconn_model()
 model %>% compile(
-  optimizer = optimizer_adam(lr =  0.0001),
+  optimizer = optimizer_adam(learning_rate =  0.0001),
   loss = "mean_squared_error",
   metrics = c("mean_squared_error")
 )
